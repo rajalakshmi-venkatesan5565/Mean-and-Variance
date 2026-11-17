@@ -49,9 +49,32 @@ It shows the distance of a random variable from its mean. It is calcualted as
 
 # Program :
 
+```
+n = int(input("Enter number of values: ")) 
+x = [] 
+p = [] 
+print("Enter values of x: ") 
+for i in range(n): 
+  x.append(float(input())) 
+print("Enter probabilities: ") 
+for i in range(n): 
+  p.append(float(input())) 
+mean=0 
+for i in range(n): 
+  mean+=x[i]*p[i] 
+ex2=0 
+for i in range(n): 
+  ex2+=(x[i]**2)*p[i] 
+variance=ex2-mean**2 
+print("Mean= ",mean) 
+print("Variance= ",variance)
+```
 
 
 # Output : 
+
+<img width="910" height="267" alt="image" src="https://github.com/user-attachments/assets/0616a613-6324-46bd-8172-d05dc1a0866c" />
+
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
